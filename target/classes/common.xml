@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap
+    PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+    "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+    
+<sqlMap namespace="common">
+	<typeAlias alias="userDto"       type="com.example.dto.UserDto" />
+
+	<select id="getList" resultClass="userDto">
+		SELECT id as id, name as name FROM userInfo
+	</select>
+</sqlMap> 
+
+
